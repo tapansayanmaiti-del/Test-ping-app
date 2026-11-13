@@ -23,7 +23,7 @@ jobs:
       - name: Extract Android project
         run: |
           mkdir -p android-project
-          unzip -q gameping-monitor (1).zip -d android-project
+          unzip -q gameping-monitor(1).zip -d android-project
           PROJECT_DIR=$(find android-project -type f -name gradlew -print -quit | xargs dirname)
           if [ -z "$PROJECT_DIR" ]; then
             echo "Gradle wrapper not found in ZIP"
